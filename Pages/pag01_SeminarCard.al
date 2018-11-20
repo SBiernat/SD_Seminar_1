@@ -80,16 +80,19 @@ page 50101 "CSD Seminar Card"
 
     actions
     {
-        area(Processing)
+        area(Navigation)
         {
-            action(ActionName)
+            group("&Seminar")
             {
-                ApplicationArea = All;
-
-                trigger OnAction()
-                begin
-
-                end;
+                action("Co&mments")
+                {
+                    RunObject = page "CSD Seminar Comment Sheet";
+                    RunPageLink = "Table Name" = const (Seminar), "No." = field ("No.");
+                    image = comment;
+                    promoted = true;
+                    PromotedIsBig = true;
+                    PromotedOnly = true;
+                }
             }
         }
     }
