@@ -5,17 +5,18 @@ pageextension 50101 "CSD ResourceListExt" extends "Resource List"
         // Add changes to page layout here
         modify(Type)
         {
-            Visible = Showtype
+            Visible = Showtype;
         }
         addafter(Type)
         {
-            field("CSD Resouce Type")
+            field("CSD Resouce Type"; "CSD Resource Type")
             { }
             field("CSD Maximum Participants"; "CSD Maximum Participants")
             {
-                Visible = ShowMaxField
+                Visible = ShowMaxField;
             }
         }
+    }
     actions
     {
         // Add changes to page actions here
