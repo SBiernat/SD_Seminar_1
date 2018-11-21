@@ -88,7 +88,7 @@ page 50101 "CSD Seminar Card"
                 {
                     RunObject = page "CSD Seminar Comment Sheet";
                     RunPageLink = "Table Name" = const (Seminar), "No." = field ("No.");
-                    image = comment;
+                    image = Comment;
                     promoted = true;
                     PromotedIsBig = true;
                     PromotedOnly = true;
